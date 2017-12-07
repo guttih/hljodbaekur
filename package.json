@@ -1,0 +1,16 @@
+{
+  "name": "hljodbaekur",
+  "version": "1.0.0",
+  "description": "App to list and serve audiobooks",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gudjon Holm Sigurdsson",
+  "license": "ISC",
+  "dependencies": {
+    "express-react-views": "^0.10.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
