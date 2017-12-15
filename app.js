@@ -5,8 +5,8 @@ var app = express();
 var jsonParser = bodyParser.json();
 
 var disk = require('./utils/disk.js');
-var users = require('./utils/users.js');
-const User = require('./models/User');
+/*var users = require('./utils/users.js');
+const User = require('./models/User');*/
 
 var fileList, books, authors = { items:[]};
 var configFileString = __dirname + '/config.json';
@@ -17,11 +17,11 @@ var fileAuthorString = __dirname + '/data/authors.json';
 
 var config = disk.getConfig(configFileString);
 
-users.run();
+//users.run();
 if (config === undefined) {
 	config = {  
 		port: 3321,
-		filePath: '../../Hljóð/Hljóðbækur/',
+		filePath: '../files',
 	};
 	disk.setConfig(configFileString, config, function() {
 		console.log("new values set");

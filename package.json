@@ -9,6 +9,7 @@
   "author": "Gudjon Holm Sigurdsson",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "express-react-views": "^0.10.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
